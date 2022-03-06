@@ -2,9 +2,17 @@
 btpanel-v7.7.0-backup  官方原版v7.7.0版本面板备份
 
 **Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）**
-
+### 全新安装
 ```Bash
 curl -sSO https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
+```
+### 从宝塔6.x升级
+```bash
+curl -sSO https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/update.sh && bash update.sh
+```
+### 从宝塔5.x升级
+```bash
+curl -sSO https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/update_to_6.sh && bash update_to_6.sh
 ```
 
 # 脚本
@@ -23,11 +31,14 @@ sed -i "/p = threading.Thread(target=check_panel_msg)/, /p.start()/d" /www/serve
 ```
 
 ### 插件同步
+``shell
+vim vim /www/server/panel/class/panelPlugin.py
+``
 ```python
+# 编辑334行
                 softList['list'] = tmpList
                 softList['pro'] = 1
         for soft in softList['list']:
             soft['endtime'] = 0
-
 ```
 ![image](https://user-images.githubusercontent.com/24518597/156919454-a7b61b77-6f86-418b-a26f-a7514d4e71bc.png)
