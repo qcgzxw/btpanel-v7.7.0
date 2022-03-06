@@ -31,9 +31,10 @@ sed -i "/p = threading.Thread(target=check_panel_msg)/, /p.start()/d" /www/serve
 ```
 
 ### 插件同步
-``shell
-vim vim /www/server/panel/class/panelPlugin.py
-``
+```shell
+vim /www/server/panel/class/panelPlugin.py
+```
+
 ```python
 # 编辑334行
                 softList['list'] = tmpList
