@@ -1,5 +1,16 @@
 # btpanel-v7.7.0
 btpanel-v7.7.0-backup  官方原版v7.7.0版本面板备份
+---
+
+！官方脚本脚本存在后门，请手动注释相关代码
+
+！官方脚本脚本存在后门，请手动注释相关代码
+
+！官方脚本脚本存在后门，请手动注释相关代码
+
+消息来源：https://hostloc.com/thread-1015644-1-1.html
+---
+
 
 **Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）**
 ### 全新安装
@@ -25,7 +36,7 @@ sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/serve
 rm -rf /www/server/panel/data/bind.pl
 
 
-// 去除文件检测
+// 去除文件检测、去除后门
 sed -i "/p = threading.Thread(target=check_files_panel)/, /p.start()/d" /www/server/panel/task.py
 sed -i "/p = threading.Thread(target=check_panel_msg)/, /p.start()/d" /www/server/panel/task.py
 ```
