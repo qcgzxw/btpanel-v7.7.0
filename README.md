@@ -1,5 +1,6 @@
 # btpanel-v7.7.0
 btpanel-v7.7.0-backup  官方原版v7.7.0版本面板备份
+
 ---
 
 ！官方脚本脚本存在后门，请手动注释相关代码
@@ -8,7 +9,10 @@ btpanel-v7.7.0-backup  官方原版v7.7.0版本面板备份
 
 ！官方脚本脚本存在后门，请手动注释相关代码
 
-消息来源：https://hostloc.com/thread-1015644-1-1.html
+脚本后门：https://hostloc.com/thread-1015644-1-1.html
+
+站点隐私泄露：https://hostloc.com/thread-1015562-1-1.html
+
 ---
 
 
