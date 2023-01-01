@@ -23,7 +23,7 @@ curl -sSO https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/instal
 ```
 ### 从宝塔6.x升级
 ```bash
-curl -sSO https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/update.sh && bash update.sh
+curl -sSO https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/update6.sh && bash update6.sh
 ```
 ### 从宝塔5.x升级
 ```bash
